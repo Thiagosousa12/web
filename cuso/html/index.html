@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Document</title>
 </head>
 <body>
-   <div class="container">
-        <div class="row">
-            <div class="col-12 bg-dark bg-opacity-50 h100">   
+    <div class="container p-5">
+        <form action="">
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" class="form-control form-control-plaintext" placeholder="Digite seu E-mail">
+                <div class="form-text">Nunca compartilhar com 3</div>
             </div>
-            <div class="col-12 col-md-3 bg-dark bg-opacity-75 h400">
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="text" id="senha" class="form-control">
             </div>
-            <div class="col-12 col-md-9 bg-dark bg-opacity-25 h400">
+            <div class="mb-3" class="form-check">
+                <input type="checkbox" id="lembrar" class="form-check-input">
+                <label for="lembrar" class="form-label">lembrar</label>
             </div>
-            <div class="col-12 bg-dark bg-opacity-50 h100">
-            </div>
-        </div>
-   </div>
-    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+        <hr>
+        <input type="file" id="arquivo" class="form-control">
+        <input type="color" id="cor" class="form-control">
+        <hr>
+        <div class="mb-3"><label for="" class="form-label">Cidade</label>
+            <input type="text" class="form-control" list="cidades" placeholder="Digite para buscar...">
+        <datalist id="cidades">
+            <option value="Cidade 1"></option>
+            <option value="Cidade 2"></option>
+            <option value="Cidade 3"></option>
+            <option value="Cidade 4"></option>
+            <option value="Cidade 5"></option>
+            <option value="Cidade 6"></option>
+        </datalist>
+    </div>
+    </div>
 </body>
 </html>
